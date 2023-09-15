@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    var cardNames = (2...14).map{"card\($0)"}
+    @State private var firstCard : Int = Int.random(in: 1...12)
+    @State private var secondCard : Int = Int.random(in: 1...12)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack{
+            Image("background-plain").resizable().ignoresSafeArea()
+            VStack(alignment: .center){
+                Spacer()
+                Image("logo")
+                Spacer()
+                HStack(){
+                    Spacer()
+                    Image(cardNames[firstCard])
+                    Spacer()
+                    Image(cardNames[secondCard])
+                    Spacer()
+                }
+                Spacer()
+                Button{
+                    firstCard = Int.random(in: 1...12)
+                    secondCard = Int.random(in: 1...12)
+                }label: {
+                    Image("button")
+                }
+                Spacer()
+                HStack{
+                    Spacer()
+                    VStack{
+                        Text("Player").padding(.bottom,10)
+                        Text("0").font(.largeTitle)
+                    }
+                    Spacer()
+                    VStack{
+                        Text("CPU").padding(.bottom,10)
+                        Text("0").font(.largeTitle)
+                    }
+                    Spacer()
+                }.foregroundColor(.white).font(.headline)
+                Spacer()
+            }
         }
-        .padding()
     }
 }
 

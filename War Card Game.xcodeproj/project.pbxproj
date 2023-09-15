@@ -19,6 +19,7 @@
 		CE14C8172A63EA6200B5ED17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE14C8192A63EA6400B5ED17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE14C81C2A63EA6400B5ED17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE14C8232A63F88900B5ED17 /* SwiftCodePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftCodePlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 				CE14C8172A63EA6200B5ED17 /* ContentView.swift */,
 				CE14C8192A63EA6400B5ED17 /* Assets.xcassets */,
 				CE14C81B2A63EA6400B5ED17 /* Preview Content */,
+				CE14C8232A63F88900B5ED17 /* SwiftCodePlayground.playground */,
 			);
 			path = "War Card Game";
 			sourceTree = "<group>";
